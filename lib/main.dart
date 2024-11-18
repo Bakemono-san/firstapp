@@ -1,4 +1,5 @@
 import 'package:firstapp/src/Controllers/ContactController.dart';
+import 'package:firstapp/src/Controllers/Plannification.dart';
 import 'package:firstapp/src/Controllers/TransactionsConstroller.dart';
 import 'package:firstapp/src/Services/DependencyLoader.dart';
 import 'package:firstapp/src/Utils/Constantes/Constants.dart';
@@ -39,6 +40,7 @@ class MainAppState extends State<MainApp> {
       providers: [
         ChangeNotifierProvider(create: (_) => TransactionsController()),
         ChangeNotifierProvider(create: (_) => ContactController()),
+        ChangeNotifierProvider(create: (_) => PlannificationController()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

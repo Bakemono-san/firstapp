@@ -1,4 +1,5 @@
 import 'package:firstapp/src/Views/Pages/MainPage.dart';
+import 'package:firstapp/src/Views/Pages/Plannification.dart';
 import 'package:firstapp/src/Views/Pages/acceuil.dart';
 import 'package:firstapp/src/Views/Pages/home.dart';
 import 'package:firstapp/src/Views/Pages/login.dart';
@@ -12,7 +13,7 @@ class Routes {
   static final Map<String, WidgetBuilder> routes = {
     '/': (context) => Home(),
     '/login': (context) => LoginForm(),
-    '/register': (context) => MainPage(),
+    '/register': (context) => Plannification(),
     '/acceuil': (context) => Acceuil(),
     '/transfert': (context) => Transfert(),
   };

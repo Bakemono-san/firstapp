@@ -1,6 +1,6 @@
 class ReponseDto {
-  final dynamic? status;
-  final dynamic? data;
+  final dynamic status;
+  final dynamic data;
   final String? message;
 
   ReponseDto({required this.status, required this.data, required this.message});

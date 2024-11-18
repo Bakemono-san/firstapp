@@ -8,7 +8,7 @@ class Fetch {
 
   static Future<dynamic> fetchUsers(String uri) async {
     final response =
-        await http.get(Uri.parse('https://waveclone-app-latest.onrender.com/$uri'), headers: {
+        await http.get(Uri.parse('http://192.168.1.33:8080/$uri'), headers: {
       'Authorization':
           'Bearer ${await TokenManager.getToken()}'
     });
@@ -30,7 +30,7 @@ class Fetch {
   static Future<dynamic> postDatas(
       String uri, Map<String, dynamic> datas) async {
     final response = await http.post(
-      Uri.parse('https://waveclone-app-latest.onrender.com/$uri'),
+      Uri.parse('http://192.168.1.33:8080/$uri'),
       headers: {
         'Authorization': 'Bearer ${await TokenManager.getToken()}',
         'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ class Fetch {
 
   static Future<LoginResponse> login(String email, String password) async {
   final response = await http.post(
-    Uri.parse('https://waveclone-app-latest.onrender.com/auth/login'),
+    Uri.parse('http://192.168.1.33:8080/auth/login'),
     headers: {
       'Content-Type': 'application/json'
     },

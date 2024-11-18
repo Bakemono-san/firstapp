@@ -34,7 +34,7 @@ class TransactionComponent extends StatelessWidget {
           child: Row(
             children: [
               Container(
-                alignment: Alignment.center,
+                // alignment: Alignment.center,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
                   color: const Color.fromARGB(80, 124, 124, 124),
@@ -54,6 +54,7 @@ class TransactionComponent extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text(
                           name,
